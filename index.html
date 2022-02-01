@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="show_image('greece.jpg', 853,1280, 'greece');">
+    Display img</button>
+
+    <script>
+    function show_image(src,width,height,alt) {
+    var img = document.createElement("img");
+    img.src = src;
+    img.width = width;
+    img.height = height;
+    img.alt = alt;
+
+    document.body.appendChild(img);
+
+
+}
+    </script>
+
+</body>
+</html>
